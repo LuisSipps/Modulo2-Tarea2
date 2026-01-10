@@ -1,0 +1,12 @@
+.variant-button {
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.variant-button.active {
+  background: #222;
+  color: white;
+}

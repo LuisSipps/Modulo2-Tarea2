@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "name": "Polera de anime Kimetsu",
+    "price": 25.99,
+    "image": "polera_manga_corta_negra",
+    "descripcion": "Polera de algodón con serigrafía de anime.",
+    "category": "Ropa"
+  },
+  {
+    "id": 2,
+    "name": "Polera de anime Evangelion",
+    "price": 28.99,
+    "descripcion": "Polera de algodón con serigrafía de anime.",
+    "category": "Ropa",
+    "variants": [
+      { "color": "Blanco", "image": "polera_manga_corta_evangelion" },
+      { "color": "Negro", "image": "polera_manga_corta_negra_evangelion" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Polera de anime manga larga Evangelion",
+    "price": 20.99,
+    "image": "polera_manga_larga_blanca_evangelion",
+    "descripcion": "Polera de algodón con serigrafía de anime.",
+    "category": "Ropa"
+  },
+  {
+    "id": 4,
+    "name": "Polerón con capucha Kimetsu",
+    "price": 39.99,
+    "descripcion": "Polerón de algodón con diseño anime.",
+    "category": "Ropa",
+    "variants": [
+      { "color": "Blanco", "image": "poleron_blanco" },
+      { "color": "Negro", "image": "poleron_negro" }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Polera manga larga Kimetsu",
+    "price": 27.99,
+    "image": "polera_manga_larga_blanca",
+    "descripcion": "Polera manga larga de algodón.",
+    "category": "Ropa"
+  },
+  {
+    "id": 6,
+    "name": "Bolsa Kobeni de CSM",
+    "price": 25.99,
+    "image": "bolsa_csm",
+    "descripcion": "Bolsa resistente de género con estampado de Kobeni del anime ChainSawMan",
+    "category": "Accesorio"
+  },
+  {
+    "id": 7,
+    "name": "Polerón con capucha Spy Family",
+    "price": 39.99,
+    "descripcion": "Polerón de algodón con diseño anime.",
+    "category": "Ropa",
+    "variants": [
+      { "color": "Blanco", "image": "poleron_spy_family_blanco" },
+      { "color": "Negro", "image": "poleron_spy_family_negro" }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Bolsa de compras Pucca",
+    "price": 15.80,
+    "image": "bolsa_pucca",
+    "descripcion": "Bolsa resistente de género con estampado de la serie animada Pucca",
+    "category": "Accesorio"
+  },
+  {
+    "id": 9,
+    "name": "Polera de Pokemón Gengar",
+    "price": 15.90,
+    "image": "polera_pokemon_gengar",
+    "descripcion": "Polera negra de algodón con estampado del Pokemón Gengar",
+    "category": "Ropa"
+  }
+]

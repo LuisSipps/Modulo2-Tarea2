@@ -1,0 +1,21 @@
+.stylo-card{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    background-color: #ff2768;
+}
+
+.stylo-card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.stylo-card h2{
+    font-size: 1.2rem;
+    background-color: #b40052;
+    border-radius: 8px;
+    color: white;
+}
