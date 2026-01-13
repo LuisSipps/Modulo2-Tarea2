@@ -12,7 +12,7 @@ function ProductList({ products, searchTerm = "" }) {/* función con props de pr
 
     return name.toLowerCase().includes(searchTerm.toLowerCase());
 
-});
+  });
 
   return (
     <div className="product-container">

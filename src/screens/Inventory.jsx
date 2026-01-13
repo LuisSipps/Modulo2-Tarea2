@@ -4,7 +4,7 @@ import ProductList from "../components/ProductList/ProductList";
 
 function Inventory() {
     console.log("Dentro de inventario");
-    
+
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -26,7 +26,7 @@ function Inventory() {
 
     return (
         <>
-        {console.log("Dentrol return de inventario")}
+            {console.log("Dentrol return de inventario")}
             <h1>Inventario desde API</h1>
             <ProductList products={products} />
         </>

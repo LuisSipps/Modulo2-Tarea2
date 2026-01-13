@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <Header onSearch={setSearchTerm}/> {/* comunicación de setSearchTerm y el Header */}
+      <Header onSearch={setSearchTerm} /> {/* comunicación de setSearchTerm y el Header */}
 
       <Routes>
         <Route path="/" element={<Home />} />

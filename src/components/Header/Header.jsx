@@ -3,7 +3,7 @@ import { images } from "../../assets/images/images.js"; //Importa las imágenes 
 import { Link } from "react-router-dom";
 import "./Header.css";
 
-function Header({onSearch}) {
+function Header({ onSearch }) {
   console.log("Header renderizado"); // Console.log por motivos de debugging
 
   return (
@@ -22,7 +22,7 @@ function Header({onSearch}) {
           </Link>
         </nav>
       </div>
-      <SearchBar onSearch={onSearch}/> {/* Se pasa el onSearch al SearchBar */}
+      <SearchBar onSearch={onSearch} /> {/* Se pasa el onSearch al SearchBar */}
     </header>
   );
 }
