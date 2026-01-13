@@ -3,34 +3,31 @@ import { getProducts } from "../services/productsApi";
 import ProductList from "../components/ProductList/ProductList";
 
 function Inventory() {
-    console.log("Dentro de inventario");
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-    const [products, setProducts] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+  useEffect(() => {
+    getProducts()
+      .then((data) => {
+        setProducts(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        setError(err.message);
+        setLoading(false);
+      });
+  }, []);
 
-    useEffect(() => {
-        getProducts()
-            .then((data) => {
-                setProducts(data);
-                setLoading(false);
-            })
-            .catch(() => {
-                setError("Error al cargar productos");
-                setLoading(false);
-            });
-    }, []);
+  if (loading) return <p>Cargando inventario...</p>;
+  if (error) return <p>Error: {error}</p>;
 
-    if (loading) return <p>Cargando productos...</p>;
-    if (error) return <p>{error}</p>;
-
-    return (
-        <>
-            {console.log("Dentrol return de inventario")}
-            <h1>Inventario desde API</h1>
-            <ProductList products={products} />
-        </>
-    );
+  return (
+    <>
+      <h1>Inventario completo</h1>
+      <ProductList products={products} />
+    </>
+  );
 }
 
 export default Inventory;
