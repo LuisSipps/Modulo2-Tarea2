@@ -1,10 +1,18 @@
 import ProductCard from "../ProductCard/ProductCard";
 import "./ProductList.css";
 
-function ProductList({ products, searchTerm }) {/* función con props de productos y el searchTerm que lo escribe el usuario  */
-  const filteredProducts = products.filter((product) => product.name.toLowerCase().includes(searchTerm.toLowerCase())
+function ProductList({ products, searchTerm = "" }) {/* función con props de productos y el searchTerm que lo escribe el usuario  */
+  /* const filteredProducts = products.filter((product) => product.name.toLowerCase().includes(searchTerm.toLowerCase()) */
   /* products.filter recorre la lista de productos, product y searchTerm los convierte en minusculas, se entrega un true si coinciden */
-  );
+  /* const filteredProducts = products.filter((product) => product.title?.toLowerCase().includes(searchTerm.toLowerCase()) */
+
+  const filteredProducts = products.filter((product) => {
+    // Soporta JSON local (name) y API (title)
+    const name = product.name || product.title || "";
+
+    return name.toLowerCase().includes(searchTerm.toLowerCase());
+
+});
 
   return (
     <div className="product-container">

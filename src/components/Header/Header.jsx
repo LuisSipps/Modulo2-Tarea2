@@ -1,5 +1,6 @@
 import SearchBar from "../SearchBar/SearchBar.jsx"; //Importa el componente SearchBar
 import { images } from "../../assets/images/images.js"; //Importa las imágenes de images
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header({onSearch}) {
@@ -13,8 +14,12 @@ function Header({onSearch}) {
           <img src={images.logo} alt="Chity Serigrafía" />
         </div>
         <nav className="menu">
-          <a href="#" className="menu-item"> Productos </a>
-          <a href="#" className="menu-item"> Animes </a>
+          <Link to="/" className="menu-item">
+            Productos
+          </Link>
+          <Link to="/inventory" className="menu-item">
+            Inventario
+          </Link>
         </nav>
       </div>
       <SearchBar onSearch={onSearch}/> {/* Se pasa el onSearch al SearchBar */}
