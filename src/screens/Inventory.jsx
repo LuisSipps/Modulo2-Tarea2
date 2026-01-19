@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getProducts } from "../services/productsApi";
 import ProductList from "../components/ProductList/ProductList";
+import "./Inventory.css";
 
 function Inventory() {
   const [products, setProducts] = useState([]);
@@ -24,8 +25,13 @@ function Inventory() {
 
   return (
     <>
-      <h1>Inventario completo</h1>
-      <ProductList products={products} />
+      <section className="inventory-page">
+        <div className="inventory-header">
+          <h1>Inventario completo</h1>
+          <p>Listado completo obtenido desde la API</p>
+        </div>
+        <ProductList products={products} />
+      </section>
     </>
   );
 }
