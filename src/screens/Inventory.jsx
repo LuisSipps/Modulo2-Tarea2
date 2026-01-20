@@ -2,11 +2,16 @@ import { useEffect, useState } from "react";
 import { getProducts } from "../services/productsApi";
 import ProductList from "../components/ProductList/ProductList";
 import "./Inventory.css";
+import SearchBar from "../components/SearchBar/SearchBar";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 
 function Inventory() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
+
 
   useEffect(() => {
     getProducts()
@@ -25,13 +30,16 @@ function Inventory() {
 
   return (
     <>
-      <section className="inventory-page">
-        <div className="inventory-header">
-          <h1>Inventario completo</h1>
-          <p>Listado completo obtenido desde la API</p>
-        </div>
-        <ProductList products={products} />
-      </section>
+      <Header
+        title="Inventario completo"
+        subtitle="Listado completo obtenido desde la API"
+        onSearch={setSearchTerm}
+      />
+      <div className="body-content">
+<ProductList products={products} />
+      </div>
+      
+      <Footer/>
     </>
   );
 }
