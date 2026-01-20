@@ -1,0 +1,10 @@
+.body-home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.body-home h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
