@@ -15,7 +15,7 @@ function Header({ onSearch }) {
         </div>
         <nav className="menu">
           <Link to="/" className="menu-item">
-            Productos
+            Home
           </Link>
           <Link to="/inventory" className="menu-item">
             Inventario
