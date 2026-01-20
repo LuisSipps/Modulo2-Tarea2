@@ -1,36 +1,49 @@
 import { useState } from "react";
 import "./ProductCard.css";
 import { images } from "../../assets/images/images";
-import VariantButton from "../VariantButton/VariantButton.jsx"; // Componente importado del boton para elegir colores
+import VariantButton from "../VariantButton/VariantButton.jsx";
 
 function ProductCard({ product }) {
-  const hasVariants = Array.isArray(product.variants) && product.variants.length > 0; /* Duelve true si variants existe es un array y tiene al menos un elemento*/
+  const hasVariants =
+    Array.isArray(product.variants) && product.variants.length > 0;
 
-  const [selectedVariant, setSelectedVariant] = useState( /* Si existen variantes pone la primera por defecto, sino Null */
+  const [selectedVariant, setSelectedVariant] = useState(
     hasVariants ? product.variants[0] : null
   );
 
-  const imageSrc = hasVariants  /* Si hay variantes usa la imagen de la variante, si no solo pone la imagen del producto */
-    ? images[selectedVariant.image]
-    : images[product.image];
+  // 👉 LÓGICA DE IMAGEN COMPATIBLE
+  let imageSrc;
+
+  if (hasVariants && selectedVariant?.image) {
+    imageSrc = images[selectedVariant.image];
+  } else if (product.thumbnail) {
+    imageSrc = product.thumbnail; // API
+  } else if (product.image) {
+    imageSrc = images[product.image]; // JSON local
+  } else {
+    imageSrc = "/no-image.png"; // opcional
+  }
+
+  const title = product.name || product.title;
+  const description = product.descripcion || product.description || "";
+  const category = product.category || "Sin categoría";
 
   return (
     <div className="stylo-card">
       <img
         src={imageSrc}
-        alt={product.name}
+        alt={title}
         className="product-image"
       />
 
-      <h2>{product.name}</h2>
-      <p>{product.descripcion}</p>
-      <p><strong>Categoría:</strong> {product.category}</p>
+      <h2>{title}</h2>
+      {description && <p>{description}</p>}
+      <p><strong>Categoría:</strong> {category}</p>
       <p><strong>Precio:</strong> ${product.price}</p>
 
-      {hasVariants && ( /* Se renderizan los botones si existen variantes */
+      {hasVariants && (
         <div className="variant-buttons">
           {product.variants.map((variant) => (
-
             <VariantButton
               key={variant.color}
               variant={variant}
