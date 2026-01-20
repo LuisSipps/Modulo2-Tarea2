@@ -1,10 +1,25 @@
 .body-home {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 65px auto 65px auto;
+    padding: 2rem 1rem;
+}
+
+.home-banner {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 40px;
 }
 
 .body-home h1 {
-  text-align: center;
-  margin-bottom: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+@media (max-width: 768px) {
+  .home-banner {
+    height: 180px;
+  }
 }

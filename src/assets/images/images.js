@@ -11,6 +11,7 @@ import bolsaCsm from "./bolsa_csm.png";
 import poleronSpyBlanco from "./poleron_spy_family_blanco.png";
 import poleronSpyNegro from "./poleron_spy_family_negro.png";
 import poleraGengar from "./polera_pokemon_gengar.png";
+import banner from "./estampado-menu.jpeg";
 
 export const images = {
     polera_manga_corta_negra: poleraMangaCortaNegra,
@@ -26,4 +27,5 @@ export const images = {
     poleron_spy_family_blanco: poleronSpyBlanco,
     poleron_spy_family_negro:poleronSpyNegro,
     polera_pokemon_gengar: poleraGengar,
+    banner,
 };
