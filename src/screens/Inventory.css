@@ -4,3 +4,19 @@
     margin-left: 65px;
     margin-right: 65px;
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 32px auto;
+}
+
+.pagination button {
+    background-color: #b40052;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
