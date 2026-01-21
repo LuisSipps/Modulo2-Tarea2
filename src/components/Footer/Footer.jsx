@@ -33,8 +33,8 @@ function Footer() {
         </section>
       </div>
       <div className="footer-copyright">
-          <p>© 2025 Chity Serigrafía. Todos los derechos reservados.</p>
-        </div>
+        <p>© 2025 Chity Serigrafía. Todos los derechos reservados.</p>
+      </div>
     </footer>
   );
 }
