@@ -46,13 +46,22 @@ function Inventory() {
 
   if (loading) {
     return (
-      <div className="loading-container">
-        <div className="spinner"></div>
-        <p>Cargando productos...</p>
-      </div>
+      <Loader
+        count={10}
+        message="Cargando inventario desde la API..."
+      />
     );
   }
-  if (error) return <p>Error: {error}</p>;
+
+
+  if (error) {
+    return (
+      <ErrorMessage
+        message={error}
+        onRetry={() => window.location.reload()}
+      />
+    );
+  }
 
   return (
     <>
