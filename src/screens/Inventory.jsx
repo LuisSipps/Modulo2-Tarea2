@@ -51,13 +51,14 @@ function Inventory() {
         onSearch={setSearchTerm}
       />
       <div className="body-content">
-        <ProductList products={paginatedProducts} />
+        <ProductList
+          products={paginatedProducts} />
         <div className="pagination">
           <button
             disabled={currentPage === 1}
             onClick={() => setCurrentPage(p => p - 1)}
           >
-             ← Anterior
+            ← Anterior
           </button>
 
           <span>

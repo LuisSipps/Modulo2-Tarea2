@@ -3,13 +3,13 @@ import "./SearchBar.css";
 
 //función que recibe componente onSearch
 function SearchBar({ onSearch }) {
-  const [value, setValue] = useState(""); 
+  const [value, setValue] = useState("");
 
-  const handleChange = (e) => { 
-    const text = e.target.value; 
-    console.log("Buscando:", text); 
-    setValue(text); 
-    onSearch(text); 
+  const handleChange = (e) => {
+    const text = e.target.value;
+    console.log("Buscando:", text);
+    setValue(text);
+    onSearch(text);
   };
 
   return (
@@ -18,7 +18,7 @@ function SearchBar({ onSearch }) {
       placeholder="Busca tus productos o animes preferidos aquí"
       className="search-bar"
       value={value}
-      onChange={handleChange} 
+      onChange={handleChange}
     />
   );
 }

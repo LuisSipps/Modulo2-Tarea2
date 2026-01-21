@@ -13,7 +13,9 @@ function ProductList({ products, searchTerm = "" }) {
   return (
     <div className="product-container">
       {filteredProducts.map((product) => (
-        <ProductCard key={product.id} product={product} />
+        <ProductCard
+          key={product.id}
+          product={product} />
       ))}
     </div>
   );
