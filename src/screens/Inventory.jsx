@@ -36,10 +36,10 @@ function Inventory() {
         onSearch={setSearchTerm}
       />
       <div className="body-content">
-<ProductList products={products} />
+        <ProductList products={products} />
       </div>
-      
-      <Footer/>
+
+      <Footer />
     </>
   );
 }

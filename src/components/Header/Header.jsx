@@ -12,6 +12,7 @@ function Header({ onSearch }) {
           {console.log("IMAGES:", images)}
           <img src={images.logo} alt="Chity Serigrafía" />
         </div>
+
         <nav className="menu">
           <Link to="/" className="menu-item">
             Home
@@ -20,8 +21,11 @@ function Header({ onSearch }) {
             Inventario
           </Link>
         </nav>
+
+        <div className="search-container">
+          <SearchBar onSearch={onSearch} />
+        </div>
       </div>
-      <SearchBar onSearch={onSearch} />
     </header>
   );
 }

@@ -11,17 +11,18 @@ function ProductCard({ product }) {
     hasVariants ? product.variants[0] : null
   );
 
-  // 👉 LÓGICA DE IMAGEN COMPATIBLE
   let imageSrc;
+
+  /* Lógica para productos del JSON ó de la URL */
 
   if (hasVariants && selectedVariant?.image) {
     imageSrc = images[selectedVariant.image];
   } else if (product.thumbnail) {
-    imageSrc = product.thumbnail; // API
+    imageSrc = product.thumbnail;
   } else if (product.image) {
-    imageSrc = images[product.image]; // JSON local
+    imageSrc = images[product.image];
   } else {
-    imageSrc = "/no-image.png"; // opcional
+    imageSrc = "/no-image.png";
   }
 
   const title = product.name || product.title;
