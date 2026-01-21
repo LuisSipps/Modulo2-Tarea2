@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { getProducts } from "../services/productsApi";
 import ProductList from "../components/ProductList/ProductList";
 import "./Inventory.css";
-import SearchBar from "../components/SearchBar/SearchBar";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
@@ -36,7 +35,9 @@ function Inventory() {
         onSearch={setSearchTerm}
       />
       <div className="body-content">
-        <ProductList products={products} />
+        <ProductList
+          products={products}
+          searchTerm={searchTerm} />
       </div>
 
       <Footer />
