@@ -42,7 +42,14 @@ function Inventory() {
       });
   }, []);
 
-  if (loading) return <p>Cargando inventario...</p>;
+  if (loading) {
+    return (
+      <div className="loading-container">
+        <div className="spinner"></div>
+        <p>Cargando productos...</p>
+      </div>
+    );
+  }
   if (error) return <p>Error: {error}</p>;
 
   return (
