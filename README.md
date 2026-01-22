@@ -49,9 +49,12 @@ ix.- Ahora nos aparecerá algo similar a esto http://localhost:5173/
 Lo copiaremos y pegaremos en nuestro navegador y se debería ver nuestra página web.
 
 x.- SÓLO SI QUIERES CREAR UNA NUEVA RAMA
-    xa.- Abre una terminal nueva en Visual Studio, en Terminal --> New Terminal
-    xb.- Escribimos en la terminal git checkout -b NombreNuevaRama
-    xc.- Ahora para crear la rama en Git/GitHub escribimos git push -u origin NombreNuevaRama
+    - xa.- Abre una terminal nueva en Visual Studio.
+        Terminal --> New Terminal
+    - xb.- Escribimos en la terminal:
+        git checkout -b NombreNuevaRama
+    - xc.- Ahora para crear la rama en Git/GitHub escribimos 
+        git push -u origin NombreNuevaRama
 
 ---
 
