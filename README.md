@@ -71,14 +71,26 @@ x.- SÓLO SI QUIERES CREAR UNA NUEVA RAMA
 
 ## CAPTURAS DE LA PÁGINA WEB Y DEL BUSCADOR FUNCIONANDO
 
+Página principal:
+
 ![Vista completa de la pantalla home](./src/assets/images/pantalla_home.jpeg)
+
+Página con el inventario (Presionando inventario en el Header):
 
 ![Vista completa de la pantalla inventory](./src/assets/images/pantalla_inventory.jpeg)
 
+Ejemplo de pantalla de carga (Componente Loader):
+
 ![Vista del mensaje de carga](./src/assets/images/cargando_imagen.png)
+
+Ejemplo con mensaje de error (Componente ErrorMessage):
 
 ![Vista del mensaje de error al fallar la conexion con la API](./src/assets/images/mensaje_error.jpeg)
 
+Ejemplo del SearchBar con datos del JSON local:
+
 ![Búsqueda en el SearchBar a través de la palabra clave "bolsa" en el home](./src/assets/images/buscador_home.jpeg)
+
+Ejemplo del SearchBar con datos de la API:
 
 ![Búsqueda en el SearchBar a través de la palabra clave "dior" en el inventory](./src/assets/images/buscador_inventory.jpeg)
