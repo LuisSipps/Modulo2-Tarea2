@@ -62,6 +62,9 @@ function Inventory() {
         onSearch={setSearchTerm}
       />
       <div className="body-content">
+        <h2 className="inventory-title">Catálogo de Productos Chity Serigrafía</h2>
+        <p className="inventory-subtitle">Otras opciones que te podrían interesar</p>
+
         <ProductList
           products={paginatedProducts} />
         <div className="pagination">

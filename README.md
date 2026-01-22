@@ -71,9 +71,7 @@ x.- SÓLO SI QUIERES CREAR UNA NUEVA RAMA
 
 ## CAPTURAS DE LA PÁGINA WEB Y DEL BUSCADOR FUNCIONANDO
 
-![Vista superior del catálogo de productos de serigrafía](./src/assets/images/captura-home.png)
-
-![Vista inferior del catálogo junto al footer](./src/assets/images/captura-footer.png)
+![Vista completa de la pantalla home](./src/assets/images/pantalla_home.jpeg)
 
 ![Vista del mensaje de carga](./src/assets/images/cargando_imagen.png)
 
