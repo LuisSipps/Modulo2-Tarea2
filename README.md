@@ -72,6 +72,8 @@ x.- SÓLO SI QUIERES CREAR UNA NUEVA RAMA
 
 ![Vista inferior del catálogo junto al footer](./src/assets/images/captura-footer.png)
 
+![Vista del mensaje de carga](./src/assets/images/cargando_imagen.png)
+
 ![Vista del mensaje de error al fallar la conexion con la API](./src/assets/images/mensaje_error.jpeg)
 
 ![Búsqueda en el SearchBar a través de la palabra clave "bolsa"](./src/assets/images/ejemplo-buscador1.png)
