@@ -1,6 +1,5 @@
 .footer {
   width: 100%;
-  padding: 1rem;
   background-color: #37947d;
   color: white;
   padding: 32px 16px;
@@ -18,6 +17,7 @@
 
 .footer-content section {
   text-align: left;
+  /* desktop */
   min-width: 200px;
 }
 
@@ -31,6 +31,9 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .footer-content section li {
@@ -39,9 +42,32 @@
   cursor: pointer;
 }
 
+.social-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-icon {
+  font-size: 18px;
+}
+
 .footer-copyright {
   background-color: #294652;
   text-align: center;
-  padding: 12px;
+  padding: 16px 12px;
   font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-content section {
+    text-align: center;
+    min-width: unset;
+  }
 }
