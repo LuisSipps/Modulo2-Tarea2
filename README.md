@@ -14,8 +14,8 @@ a partir de malla tensada, tinta y calor, la cual genera prendas con estampados 
 - PRODUCTLIST: Componente que administra de manera individual los productos.
 - VARIANTBUTTON: Componente botón que se muetra sólo si un producto tiene más de un color.
 - FOOTER: Sección inferior de la pagina web, con diversos datos y detalles del E-commerce.
-- ERRORMESSAGE: Mensaje de error al tener algún fallo de conexion con la API que contiene la data del inventario.
-- LOADER: Mensaje de Carga al cambiar del home al inventario.
+- ERRORMESSAGE: Mensaje de error al tener algún fallo de conexión o en la obtención de datos desde la API.
+- LOADER: Componente visual que indica el estado de carga.
 
 ---
 
@@ -57,13 +57,16 @@ x.- SÓLO SI QUIERES CREAR UNA NUEVA RAMA
 
 ## TECNOLOGÍAS USADAS
 
-- React.js -> Libreria Robusta de JavaScript para la construccion de aplicaciones web
-- JavaScript -> Lenguaje de programación que permite crear contenido dinámico (lógica y manejo de estados)
-- Vite --> Herramienta de compilación que permite una experiencia de desarrollo más rápida
-- CSS3 --> Lenguaje de estilos y diseño
-- Html5 --> Lenguaje de etiquetas que permiten darle estructura a un proyecto web
-- Node.js --> Entorno de ejecición de Js que permite crear servidores, aplicaciones web, lineas de comando 
-- Git & GitHub --> Software de control de versiones
+- React.js -> Libreria Robusta de JavaScript para la construccion de aplicaciones web.
+- JavaScript -> Lenguaje de programación que permite crear contenido dinámico.
+- Vite --> Herramienta de compilación que permite una experiencia de desarrollo más rápida.
+- CSS3 --> Lenguaje de estilos y diseño.
+- Html5 --> Lenguaje de etiquetas que permiten darle estructura a un proyecto web.
+- Node.js --> Entorno de ejecición de Js que permite crear servidores, aplicaciones web, lineas de comando.
+- Git & GitHub --> Software de control de versiones.
+- React Hooks (useState, useEffect): Manejo de estado y efectos secundarios.
+- Fetch API: Consumo de datos desde una API REST externa.
+
 ---
 
 ## CAPTURAS DE LA PÁGINA WEB Y DEL BUSCADOR FUNCIONANDO
