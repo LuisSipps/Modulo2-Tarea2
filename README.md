@@ -33,7 +33,7 @@ ii.- Ahora con Git instalado abriremos la aplicación Visual studio y vamos a pr
 iii.- Vamos a escribir en el buscador git: clone 
 
 iv.- Lo siguiente será pegar la url del repositorio que queremos clonar
-en este caso será https://github.com/LuisSipps/Modulo2-Tarea1.git
+en este caso será https://github.com/LuisSipps/Modulo2-Tarea2.git
 
 v.- Siguiente paso sera elegir la carpeta de destino y aceptar.
 

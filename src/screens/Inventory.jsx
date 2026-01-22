@@ -44,15 +44,9 @@ function Inventory() {
       });
   }, []);
 
-  if (loading) {
-    return (
-      <Loader
-        count={10}
-        message="Cargando inventario desde la API..."
-      />
-    );
-  }
-
+  if (loading)
+    return
+  <Loader text="Cargando inventario..." />;
 
   if (error) {
     return (
