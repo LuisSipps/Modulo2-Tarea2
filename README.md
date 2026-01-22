@@ -12,8 +12,10 @@ a partir de malla tensada, tinta y calor, la cual genera prendas con estampados 
 - SEARCHBAR: Barra de búsqueda ubicada en el Header, la cual filtra el catálogo según lo que se escriba.
 - PRODUCTCARD: Componente con la información escencial de un producto, imagen, nombre, descripcion, precio, etc.
 - PRODUCTLIST: Componente que administra de manera individual los productos.
-- VARIANTBUTTON: Componente botón que se muetra sólo si un producto tiene más de un color
-- FOOTER: Sección inferior de la pagina web, con diversos datos y detalles del E-commerce
+- VARIANTBUTTON: Componente botón que se muetra sólo si un producto tiene más de un color.
+- FOOTER: Sección inferior de la pagina web, con diversos datos y detalles del E-commerce.
+- ERRORMESSAGE: Mensaje de error al tener algún fallo de conexion con la API que contiene la data del inventario.
+- LOADER: Mensaje de Carga al cambiar del home al inventario.
 
 ---
 
@@ -69,6 +71,8 @@ x.- SÓLO SI QUIERES CREAR UNA NUEVA RAMA
 ![Vista superior del catálogo de productos de serigrafía](./src/assets/images/captura-home.png)
 
 ![Vista inferior del catálogo junto al footer](./src/assets/images/captura-footer.png)
+
+![Vista del mensaje de error al fallar la conexion con la API](./src/assets/images/mensaje_error.jpeg)
 
 ![Búsqueda en el SearchBar a través de la palabra clave "bolsa"](./src/assets/images/ejemplo-buscador1.png)
 
