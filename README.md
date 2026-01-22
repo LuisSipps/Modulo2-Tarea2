@@ -8,21 +8,21 @@ a partir de malla tensada, tinta y calor, la cual genera prendas con estampados 
 
 ## COMPONENTES CREADOS
 
-- HEADER:  Sección superior de la pagina web con el logo, nombre, etc.
+- HEADER:  Sección superior de la página web con el logo, nombre, etc.
 - SEARCHBAR: Barra de búsqueda ubicada en el Header, la cual filtra el catálogo según lo que se escriba.
-- PRODUCTCARD: Componente con la información escencial de un producto, imagen, nombre, descripcion, precio, etc.
-- PRODUCTLIST: Componente que administra de manera individual los productos.
-- VARIANTBUTTON: Componente botón que se muetra sólo si un producto tiene más de un color.
-- FOOTER: Sección inferior de la pagina web, con diversos datos y detalles del E-commerce.
+- PRODUCTCARD: Componente con la información esencial de un producto, imagen, nombre, descripción, precio, etc.
+- PRODUCTLIST: Componente que renderiza dinámicamente productos mediante props.
+- VARIANTBUTTON: Componente botón que se muestra sólo si un producto tiene más de un color.
+- FOOTER: Sección inferior de la página web, con diversos datos y detalles del E-commerce.
 - ERRORMESSAGE: Mensaje de error al tener algún fallo de conexión o en la obtención de datos desde la API.
 - LOADER: Componente visual que indica el estado de carga.
 
 ---
 
-## INSTRUCCIONES DE INSTALCIÓN
+## INSTRUCCIONES DE INSTALACIÓN
 
 i.- Primero que todo verificar si se tiene instalado Git en tu computadora. 
-Por lo cual iremos a nuestra barra de búsqueda y abriremos el CMD o simbolo de sistema en modo administrador.
+Por lo cual iremos a nuestra barra de búsqueda y abriremos el CMD o símbolo de sistema en modo administrador.
 y pegaremos lo siguiente: git --version
 
     ia.- Si no nos aparece una versión en la consola, tendremos que dirigirnos a la siguiente url https://git-scm.com/install/windows
@@ -37,16 +37,16 @@ en este caso será https://github.com/LuisSipps/Modulo2-Tarea2.git
 
 v.- Siguiente paso sera elegir la carpeta de destino y aceptar.
 
-vi.- Ahora volveremos a abrir nuestro CMD o símbolo de sistema en modo administrador, y mediante comandos deberemos llegar a la carpeta que contenga nuestro proyecto clonado. (Recomenadación: Escribir dir en el CMD para comprobar que exista el archivo package.json y así verificar que estamos en la ruta correcta).
+vi.- Ahora volveremos a abrir nuestro CMD o símbolo de sistema en modo administrador, y mediante comandos deberemos llegar a la carpeta que contenga nuestro proyecto clonado. (Recomendación: Escribir dir en el CMD para comprobar que exista el archivo package.json y así verificar que estamos en la ruta correcta).
 
 vii Una vez dentro de nuestro proyecto tendremos que instalar las dependencias (npm) mediante el comando:
 npm install
 
-viii.- Una vez instaladas las dependecias desplegaremos nuestro proyecto con el comando:
+viii.- Una vez instaladas las dependencias desplegaremos nuestro proyecto con el comando:
 npm run dev
 
 ix.- Ahora nos aparecerá algo similar a esto http://localhost:5173/ 
-Lo copiaremos y pegaremos en nuestro navegador y se deberia ver nuestra página web.
+Lo copiaremos y pegaremos en nuestro navegador y se debería ver nuestra página web.
 
 x.- SÓLO SI QUIERES CREAR UNA NUEVA RAMA
     xa.- Abre una terminal nueva en Visual Studio, en Terminal --> New Terminal
@@ -62,7 +62,7 @@ x.- SÓLO SI QUIERES CREAR UNA NUEVA RAMA
 - Vite --> Herramienta de compilación que permite una experiencia de desarrollo más rápida.
 - CSS3 --> Lenguaje de estilos y diseño.
 - Html5 --> Lenguaje de etiquetas que permiten darle estructura a un proyecto web.
-- Node.js --> Entorno de ejecición de Js que permite crear servidores, aplicaciones web, lineas de comando.
+- Node.js --> Entorno de ejecución de Js que permite crear servidores, aplicaciones web, líneas de comando.
 - Git & GitHub --> Software de control de versiones.
 - React Hooks (useState, useEffect): Manejo de estado y efectos secundarios.
 - Fetch API: Consumo de datos desde una API REST externa.
@@ -85,7 +85,7 @@ Ejemplo de pantalla de carga (Componente Loader):
 
 Ejemplo con mensaje de error (Componente ErrorMessage):
 
-![Vista del mensaje de error al fallar la conexion con la API](./src/assets/images/mensaje_error.jpeg)
+![Vista del mensaje de error al fallar la conexión con la API](./src/assets/images/mensaje_error.jpeg)
 
 Ejemplo del SearchBar con datos del JSON local:
 
