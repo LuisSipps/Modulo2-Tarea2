@@ -29,24 +29,23 @@ function Inventory() {
   );
 
   useEffect(() => {
-    setCurrentPage(1);
-  }, [searchTerm]);
+    setLoading(true);
 
-  useEffect(() => {
-    getProducts()
-      .then((data) => {
-        setProducts(data);
-        setLoading(false);
-      })
-      .catch((err) => {
-        setError(err.message);
-        setLoading(false);
-      });
+    setTimeout(() => {
+      getProducts()
+        .then((data) => {
+          setProducts(data);
+          setLoading(false);
+        })
+        .catch((err) => {
+          setError(err.message);
+          setLoading(false);
+        });
+    }, 1500); // 1.5 segundos de retraso
   }, []);
 
   if (loading)
-    return
-  <Loader text="Cargando inventario..." />;
+    return <Loader text="Cargando inventario..." />;
 
   if (error) {
     return (
