@@ -73,10 +73,12 @@ x.- SÓLO SI QUIERES CREAR UNA NUEVA RAMA
 
 ![Vista completa de la pantalla home](./src/assets/images/pantalla_home.jpeg)
 
+![Vista completa de la pantalla inventory](./src/assets/images/pantalla_inventory.jpeg)
+
 ![Vista del mensaje de carga](./src/assets/images/cargando_imagen.png)
 
 ![Vista del mensaje de error al fallar la conexion con la API](./src/assets/images/mensaje_error.jpeg)
 
-![Búsqueda en el SearchBar a través de la palabra clave "bolsa"](./src/assets/images/ejemplo-buscador1.png)
+![Búsqueda en el SearchBar a través de la palabra clave "bolsa" en el home](./src/assets/images/buscador_home.jpeg)
 
-![Búsqueda en el SearchBar a través de la palabra clave "Kimetsu" el cual es un anime en particular](./src/assets/images/ejemplo-buscador2.png)
+![Búsqueda en el SearchBar a través de la palabra clave "dior" en el inventory](./src/assets/images/buscador_inventory.jpeg)
